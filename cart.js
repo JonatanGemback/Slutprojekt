@@ -20,9 +20,10 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 cart.forEach(item => {
     const itemElement = document.createElement('div');
     const imgElement = document.createElement('img');
-    imgElement.src = item.image;
+    imgElement.src = item.picture;
     imgElement.alt = item.name;
     itemElement.appendChild(imgElement);
     itemElement.innerHTML = '${item.name} - ${item.price}';
+    itemElement.classList.add('cartItem');
     document.body.appendChild(itemElement);
 });

@@ -12,6 +12,15 @@ li {
     line-height: 1.2rem;
 }
 
+#cart-items tr img {
+    height: 200px;
+}
+
+.cart-image {
+    display: flex;
+    justify-content: center;
+}
+
 #topBar {
     background-color: white;
     position: sticky;

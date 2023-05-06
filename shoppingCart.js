@@ -14,7 +14,7 @@ window.onload = function () {
             row.innerHTML = `
                 <td>${item.name}</td>
                 <td>${item.price.toFixed(2)}</td>
-                <td><img src="${item.image}" alt="${item.name}" /></td>
+                <td class="cart-image"><img src="${item.picture}" alt="${item.name}" /></td>
                 `;
             cartItems.appendChild(row);
         });
