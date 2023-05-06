@@ -16,9 +16,22 @@ li {
     height: 200px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cart-items tr {
+    border-bottom: 2px solid black;
+}
+
 .cart-image {
     display: flex;
     justify-content: center;
+}
+
+.produkt-cart {
+    font-size: large;
 }
 
 #topBar {
@@ -103,43 +116,6 @@ div#loggaTopDiv2 {
 #kundvagn {
     display: flex;
     justify-content: center;
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-}
-
-.topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-.search-container button:hover {
-    background: #ccc;
-}
-
-@media screen and (max-width: 100%) {
-    .topnav .search-container {
-        float: none;
-    }
-
-    .topnav a,
-    .topnav input[type=text],
-    .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
 }
 
 #loggaTop {
@@ -424,4 +400,15 @@ div#menyBar {
 #out {
     margin-top: 1%;
     margin-left: 1%;
+}
+
+
+#knappar {
+    display: flex;
+    justify-content: center;
+}
+
+#kontaktMeny {
+    bottom: 0px;
+    width: 100%;
 }
