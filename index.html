@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+    <script src="index.js"></script>
+    <title>Webshoppen</title>
+</head>
+
+<body>
+    <div id="topBar">
+        <div id="loggaTopDiv1">
+            <a id="logga" href="index.html"><img src="img/budolagretLogga.png" id="loggaTop"></a>
+        </div>
+        <div id="loggaTopDiv2">
+            <div class="search-container">
+                <form id="search-books">
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search">
+                    <button name="search_btn">Sök</button>
+                    <button name="reset" type="reset">Reset</button>
+                </form>
+                <div id="app"></div>
+            </div>
+            <div class="varukorg">
+                <a href="varukorg.html" class="varukorg"><img src="img/shopping_cart.png" alt="Varukorg"
+                        id="shoppingCart"></a>
+            </div>
+        </div>
+    </div>
+    <div id="meny">
+        <div id="menyDiv1">
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="judogi.html" class="menyRuta">
+                        <p class="menyText">JUDODRÄKTER</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="balte.html" class="menyRuta">
+                        <p class="menyText">BÄLTEN</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="kastdockor.html" class="menyRuta">
+                        <p class="menyText">KASTDOCKOR</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="traningsklader.html" class="menyRuta">
+                        <p class="menyText">TRÄNINGSKLÄDER</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="tejp.html" class="menyRuta">
+                        <p class="menyText">TEJP</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="skydd.html" class="menyRuta">
+                        <p class="menyText">SKYDD</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="kosttillskott.html" class="menyRuta">
+                        <p class="menyText">KOSTTILLSKOTT</p>
+                    </a>
+                </div>
+            </div>
+            <div class="menyDiv">
+                <div class="menyDivText">
+                    <a href="shakers.html" class="menyRuta">
+                        <p class="menyText">SHAKERS</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/backgrund.jpg" id="bild">
+    </div>
+    <div>
+        <div class="popularBar">
+            <h2 id="popularText" class="popularText">POPULÄRT</h2>
+        </div>
+        <div class="popularBox">
+            <div class="popularRutan">
+                <div class="popularMönster">
+                    <img src="img/vit_mizunogi.jpg" class="popular">
+                    <div class="beskrivning">
+                        <p class="märke">MIZUNO</p>
+                        <h4 class="popularNamn">MIZUNO: YUSHO III IJF APPROVED JUDODRÄKT - VIT</h4>
+                        <h3>1 890 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button"
+                                onclick="addToCart('MIZUNO: YUSHO III IJF APPROVED JUDODRÄKT - VIT', 1890, 'img/vit_mizunogi.jpg')"><img
+                                    src="img/shopping_cart.png" class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMönster">
+                    <img src="img/mizuno_danbälte.jpg" class="popular">
+                    <div class="beskrivning">
+                        <p class="märke">MIZUNO</p>
+                        <h4 class="popularNamn">Mizuno danbälte IJF</h4>
+                        <h3>300 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button" onclick="addToCart('MIZUNO DANBÄLTE IJF', 300)"><img
+                                    src="img/shopping_cart.png" class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMönster">
+                    <img src="img/kastdocka_1.jfif" class="popular" id="kastdockaPopular">
+                    <div class="beskrivning">
+                        <p class="märke">LISARO</p>
+                        <h4 class="popularNamn">Lisaro Konstläder – kastdocka – grappling – dummy för MMA kampsport, Jiu
+                            Jitsu, judo, ringar, brottning. Fylld.</h4>
+                        <h3>2 390 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button"
+                                onclick="addToCart('Lisaro Konstläder – kastdocka – grappling – dummy för MMA kampsport, JiuJitsu, judo, ringar, brottning. Fylld.', 2390)"><img
+                                    src="img/shopping_cart.png" class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMönster">
+                    <img src="img/rashguard_adidas.jpg" class="popular">
+                    <div class="beskrivning">
+                        <p class="märke">ADIDAS</p>
+                        <h4 class="popularNamn">Adidas rashguard</h4>
+                        <h3>269 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button" onclick="addToCart('Adidas rashguard', 269)"><img
+                                    src="img/shopping_cart.png" class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMönster">
+                    <img src="img/sporttejp_vitri.webp" class="popular">
+                    <div class="beskrivning">
+                        <p class="märke">VITRI</p>
+                        <h4 class="popularNamn">VITRI SPORTTEJP</h4>
+                        <h3>25 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button" onclick="addToCart('VITRI SPORTTEJP', 25)"><img
+                                    src="img/shopping_cart.png" class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMönster">
+                    <img src="img/benskydd_1.jpg" class="popular">
+                    <div class="beskrivning">
+                        <p class="märke">BUDO-NORD</p>
+                        <h4 class="popularNamn">Benskydd</h4>
+                        <h3>450 kr</h3>
+                        <div id="knappDiv">
+                            <button class="button" onclick="addToCart('Benskydd', 450)"><img src="img/shopping_cart.png"
+                                    class="kopVarukorg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form id="uppKnapp">
+        <input type="BUTTON" value="↑" onclick="window.location.href='#top'">
+    </form>
+    <div id="infoBakgrund">
+        <div class="loggaDiv">
+            <a href="https://www.instagram.com/" id="instagram"><img src="img/ig.png" alt="instagram" class="logga"></a>
+        </div>
+        <div id="fbPlasering">
+            <a href="https://www.facebook.com/" id="facebook"><img src="img/fb.png" alt="facebook" class="logga"></a>
+        </div>
+        <div id="infoRuta">
+            <h3 class="kontaktaOssText">KONTAKTA OSS</h3>
+            <a class="kontaktaOssText">Adress: Lägerhyddsvägen 2</a>
+            <a class="kontaktaOssText">Ring oss: +46 76 564 32 76</a>
+            <a class="kontaktaOssText" href="mailto:someone@example.com">Maila oss</a>
+        </div>
+        <div id="twitter">
+            <a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter" class="logga"></a>
+        </div>
+        <div class="loggaDiv">
+            <a href="https://www.youtube.com/"><img src="img/yt.png" alt="youtube" class="logga"></a>
+        </div>
+    </div>
+</body>
+
+</html>

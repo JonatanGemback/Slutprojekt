@@ -1,0 +1,418 @@
+body {
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px 0;
+    line-height: 1.2rem;
+}
+
+#topBar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#bild {
+    width: 100%;
+}
+
+#logga {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#loggaTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loggaTopDiv1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#loggaTopDiv2 {
+    background-color: #6d83d4;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+div#loggaTopDiv2 {
+    width: 50%;
+}
+
+#menyDiv1 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.menyDiv {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+#menyDiv1 :hover {
+    background-color: #acb8e7;
+}
+
+#menySida {
+    background-color: #acb8e7;
+}
+
+.menyRuta {
+    text-decoration: none;
+}
+
+.menyText {
+    color: black;
+}
+
+#kundvagn {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 100%) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+#loggaTop {
+    width: 30%;
+}
+
+#fraktText {
+    color: white;
+}
+
+#rabattText {
+    color: lightblue;
+}
+
+#öppetKöpText {
+    color: white;
+}
+
+.button {
+    background-color: #6d83d4;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: 12%;
+    border-radius: 39px;
+}
+
+.kopVarukorg {
+    width: 80%;
+}
+
+#meny {
+    display: flex;
+    flex-direction: row;
+}
+
+#menyBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+div#menyBar {
+    border-style: none none solid none;
+    border-width: 1px;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    width: 33%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    padding: 2% 2%;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.menyLogga {
+    display: flex;
+    background-color: white;
+    width: 33%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menyLogga a {
+    color: black;
+    text-decoration: none;
+}
+
+.menyLogga a:hover {
+    text-decoration: underline;
+}
+
+.varukorg {
+    display: flex;
+    justify-content: center;
+}
+
+#shoppingCart {
+    width: 10%;
+    margin: 1%;
+    opacity: 120%;
+}
+
+.popularBar {
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+    background-color: #6d83d4;
+}
+
+.popularText {
+    font-size: xx-large;
+    text-decoration: underline;
+    color: white;
+}
+
+.popularBox {
+    margin: 7%;
+}
+
+.popularRutan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#uppKnapp {
+    float: right;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.popularMönster {
+    width: 25%;
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 29px;
+    border-color: black;
+}
+
+.popular {
+    width: 98%;
+    border-radius: 10%;
+    margin: 1%;
+}
+
+#kastdockaPopular {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.beskrivning {
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    color: black;
+    text-decoration: underline;
+}
+
+#infoBakgrund {
+    background-color: #6d83d4;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#infoRuta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.kontaktaOssText {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.logga {
+    width: 45%;
+    background-color: white;
+    border-radius: 20%;
+}
+
+.loggaDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instagram {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#twitter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#facebook {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#fbPlasering {
+    display: flex;
+    align-items: center;
+}
+
+#sidorPosition {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bildSidan {
+    width: 50%;
+    margin-top: 8%;
+}
+
+.beskrivningSidan {
+    width: 50%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bildPosition {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.beskrivningPosition {
+    display: flex;
+    flex-direction: column;
+}
+
+.menyLoggaVara {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menyLoggaVara a {
+    color: black;
+    text-decoration: none;
+}
+
+.menyLoggaVara a:hover {
+    text-decoration: underline;
+}
+
+.kläderMönsterVara {
+    width: 30%;
+    margin: 1%;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+#knappDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+#köpKnapp {
+    width: 50px;
+}
+
+#cartContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#out {
+    margin-top: 1%;
+    margin-left: 1%;
+}
